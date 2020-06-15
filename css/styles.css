@@ -1,1 +1,439 @@
 /* CSS here :) */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #3a3633;
+}
+
+nav li {
+    float: left;
+}
+
+nav li:hover {
+    border-bottom: 3px solid white;
+    transition: ease-out .5s;
+}
+
+nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 12px;
+    
+}
+
+.logo {
+    width: 50px;
+    padding: 0px 20px;
+}
+
+.logo:hover {
+    transition: ease-in-out 1s;
+    opacity: 0.5
+}
+
+.dropdown:hover .products-content {
+    display: block;
+    width: 110px;
+}
+
+.products-content {
+    display: none;
+}
+
+.products-content--item {
+    background-color: #3a3633;
+    display: block;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    height: 40px;
+    width: 110px;
+
+}
+
+.nav-items .dropdown {
+    align-items: center;
+    height: var;
+}
+
+.menu {
+    display: none;
+    width: 50px;
+}
+
+.menu-items {
+    display: none;
+    background-color: #3a3633;
+    color: white;
+}
+
+.items {
+    display: none;
+}
+.main {   
+    background-image: url('/imgs/bg.jpg');
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    padding-top: 200px;
+}
+
+.section {
+    color: white;
+    margin: 150px 200px;
+    display: flex;
+    width: 800px;
+    height: 300px;
+    border: white;
+    border-style: solid;
+    border-width: 5px;
+    position: relative;
+}
+
+.sub-section {
+    width: 350px;
+    display: flex;
+    background: rgba(0, 0, 0, 0);
+    font-size: 25px;
+}
+
+.sub-section h1 {
+    padding: 20px;
+}
+
+.sub-sub-section {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 10px;
+    width: 450px;
+}
+
+.content1 {
+    display: flex;
+    border-style: none none dashed none;
+    border-width: 1.2px;
+    font-size: 20px;
+}
+
+.content2 {
+    display: flex;
+    height: 20px;
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.content2 > span {
+    padding: 10px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+    height: 400px;
+    position: relative;
+}
+
+.features img {
+    width: 30px;
+}
+
+.card > a {
+    text-align: center;
+    width: 175px ;
+    height: 25px;
+    background-color: #3a3633;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.card>a:hover {
+    border: cornflowerblue;
+    border-style: solid;
+}
+
+.card > p {
+    color: grey;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    height: 200px;
+    align-items: center;
+    text-align: center;
+    width: 225px;
+    padding: 30px;
+    margin: 0px 20px;
+    box-shadow: 0px 0px 6px -1px rgba(54,54,54,0.44);
+    border-radius: 8px;
+    position: sticky;
+}
+
+.card a {
+    background-color: #3a3633;
+    color: white;
+    height: 15px;
+}
+
+.cool {
+    background-color: #3a3633;
+    color: white;
+    padding: 50px;
+    height: 300px;
+    position: relative;
+}
+.cool > p {
+    font-size: 20px;
+}
+.cool > h1{
+font-size: 50px;
+}
+
+.cool-sub {
+    height: 100px;
+    width: 200px;
+    position: relative;
+    background-color: #3a3633;
+    margin-top: 80px;
+    z-index: 1;
+    text-align: center;
+    padding: 15px;
+    border-style: solid;
+    border-width: 5px
+}
+
+.cool-sub:hover {
+    animation: infinite-spinning 10s;
+}
+
+@keyframes infinite-spinning {
+    0% {
+    top: 0; left: 0;
+      transform: rotate(0deg);
+    }
+    50% {
+    top: 0; left: 200px;
+      transform: rotate(180deg);
+        }
+
+    100% {
+    top: 0; left: 200px;
+        transform: scale(0.01,0.01);
+    }
+
+  }
+
+.cool-sub h3 {
+    color: red;
+    font-size: 15px;
+
+}
+
+.cool-sub p {
+    font-size: 12px;
+}
+
+.slick {
+    position: relative;
+    height: 300px;
+    background-color: rgb(47, 160, 253);
+    background-image: linear-gradient(to left, rgb(47, 160, 253), white);
+    color: white;
+    text-align: right;
+    padding: 50px;
+    position: relative;
+}
+
+.slick > h1{
+    font-size: 50px;
+}
+
+.slick > p{
+    font-size: 20px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300 px;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+}
+
+.images .container {
+    overflow: hidden;
+    width: calc(100%/3);
+    position: relative;
+}
+
+.container:hover img {
+    transform: scale(1.5);
+}
+
+.container .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: .5s ease; 
+    }
+
+.container:hover .overlay {
+opacity: 0.5;
+}
+
+.text {
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    font-size: 11px;
+    color: grey;
+    padding: 0px;
+}
+
+.form-item {
+    display: flex;    
+    padding-bottom: 10px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px 50px 0px;
+    padding-top: 20px;
+    font-size: 11px;
+    color: grey;
+    border-style: solid none none none;
+    border-top-width: 1.2px;
+}
+
+@media (max-width: 768px) {
+
+    .nav {
+        display: block;
+    }
+
+    .nav-items-sub, .dropdown{
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        padding-right: 10px;
+    }
+
+    .dropdown-sub:hover .menu-items{
+        display: block;
+    }
+    
+    .menu-items {
+        display: none;
+        position: absolute;
+        background-color: #3a3633;
+        color: white; 
+    }
+
+    .items {
+        color: white;
+        display: block;
+        text-decoration: none;
+        padding: 10px;        
+    }
+
+    .main {
+        height: 100%;
+        width: 100%;
+    }
+
+    .section {
+        flex-wrap: wrap;
+        width: 80%;
+        height: 800px;
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;    
+        height: 900px;
+        position: relative;
+    }
+
+    .cool-sub {
+        padding-top: 0px;
+        margin-top: 0px;
+        height: 28%;
+    }
+
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        height: 300 px;
+        }
+    
+    .images img {
+        width: 100%;
+        height: 100%;
+        transition: transform .5s ease;
+    }
+    
+    .images .container {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+    }
+
